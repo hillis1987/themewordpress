@@ -1,0 +1,183 @@
+/*
+Theme Name: Nx
+Theme URI: http://prova.it
+Author: test
+Author URI: http://prova.it
+Domain Path: /languages
+Description: theme for WordPress takes us back to the blog, featuring a full range of post formats, each displayed beautifully in their own unique way. Design details abound, starting with a vibran color scheme and matching header images, beautiful typography and icons, and a flexible layout that looks great on any device, big or small.
+Version: 1.0
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags:  one-column, two-columns, right-sidebar,  custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: nx
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+
+*/
+
+body{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+div.main-content {
+  flex: 1;
+}
+
+div .carousel,
+.carousel-inner,
+.carousel-item{height: 600px;}
+
+
+/* Comments */
+
+#comments h2 {margin-bottom: 40px;}
+
+div .comments{padding-top: 40px; }}
+div .comments textarea{width: 100%;}
+div .comments label{min-width: 80px;}
+div .comments ul,
+div .comments ol{list-style-type: none;}
+div .comments li .reply {margin-bottom: 30px; border-bottom: 1px solid #ccc; padding-bottom: 10px;}
+div .comment-author img{border-radius: 999px;}
+
+
+/* Input e textarea */
+
+input,
+textarea{padding: 5px 10px; border: 1px solid #ccc}
+
+/* Widget Search */
+/* .widget_search input, button {width: 100%; border: 1px solid red;} */
+.wp-block-search__button {background: #fff;}
+
+
+/* Pagination */
+.pagination{margin-bottom: 40px;}
+.page-numbers{display: inline-block;padding: 10px 15px; border: 1px solid #ccc; margin-right: 4px;}
+
+/* General wordpress conf */
+.post img{max-width: 100%;}
+.post div img{max-width: 730px;}
+
+/* ---- Css Wordpress ----*/
+
+* WordPress Core
+-------------------------------------------------------------- */
+.gallery-caption{padding: 5px; font-size: 10px;}
+
+.bypostauthor{border-left: 3px solid #ddd; padding-left: 20px;}
+
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+    background-color: #eee;
+    clip: auto !important;
+    clip-path: none;
+    color: #444;
+    display: block;
+    font-size: 1em;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar. */
+}
